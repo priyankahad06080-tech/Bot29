@@ -1,0 +1,22 @@
+{
+  "guilds": {
+    "default_prefix": "!",
+    "glory_multiplier": 1,
+    "event_timeout": 3600000,
+    "max_leaderboard_entries": 10
+  },
+  "features": {
+    "auto_save": true,
+    "save_interval": 60000,
+    "enable_stats": true,
+    "enable_events": true
+  },
+  "colors": {
+    "success": "#51CF66",
+    "error": "#FF6B6B",
+    "info": "#339AF0",
+    "warning": "#FF922B",
+    "leaderboard": "#4C72B0",
+    "status": "#9775FA"
+  }
+}

@@ -9,6 +9,7 @@ A Discord bot for managing Final Fantasy guild activities and glory tracking.
 - **Leaderboards**: Display top performers and guild rankings
 - **Announcements**: Post guild announcements and updates
 - **Event Management**: Create and manage guild events
+- **Statistics**: View detailed guild statistics
 
 ## Prerequisites
 
@@ -50,16 +51,22 @@ npm start
 !glory leaderboard           - Display guild leaderboard
 !glory status <member>       - Check member's glory status
 !event create <name>         - Create a new guild event
+!event list                  - List all events
+!event join <event_id>       - Join an event
 !announcement <message>      - Post guild announcement
+!stats                       - View guild statistics
+!help                        - Show all commands
 ```
 
 ## Configuration
 
-Edit `config.json` to customize:
-- Guild ID
-- Role assignments
-- Glory point multipliers
-- Event settings
+Edit the bot settings:
+- `PREFIX` in `.env` to change command prefix (default: `!`)
+- Modify the bot's status in `index.js`
+
+## Data Storage
+
+Guild data is stored in `guild_data.json` locally. For production, consider using a database like MongoDB or Firebase.
 
 ## Contributing
 
